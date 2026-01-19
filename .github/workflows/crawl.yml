@@ -45,7 +45,9 @@ jobs:
           POSTGRES_DB: postgres
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
+          PYTHONPATH: src
         run: python src/main.py
+
 
       - name: Dump DB
         env:
