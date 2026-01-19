@@ -1,7 +1,7 @@
 CREATE SCHEMA IF NOT EXISTS github;
 
 CREATE TABLE IF NOT EXISTS github.repositories (
-    id BIGINT PRIMARY KEY,
+    id TEXT PRIMARY KEY,
     owner TEXT NOT NULL,
     name TEXT NOT NULL,
     stars INTEGER NOT NULL,

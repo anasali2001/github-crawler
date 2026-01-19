@@ -35,7 +35,7 @@ def crawl(limit=100_000):
             repo = edge["node"]
 
             upsert_repository(
-                repo_id=int(repo["id"], 16),
+                repo_id=repo["id"],
                 owner=repo["owner"]["login"],
                 name=repo["name"],
                 stars=repo["stargazerCount"],
