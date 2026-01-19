@@ -1,7 +1,7 @@
 import os
 
 GITHUB_API_URL = "https://api.github.com/graphql"
-GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 
 POSTGRES_HOST = os.environ["POSTGRES_HOST"]
 POSTGRES_DB = os.environ["POSTGRES_DB"]
